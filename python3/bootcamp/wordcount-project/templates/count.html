@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+    <a href="{% url 'home' %}">Start Again</a>
     <h1>There are {{ count }} words in your text.</h1>
     <h1>Your Text: </h1>
     {{ fulltext }}
@@ -12,7 +13,7 @@
     <h1>Word Count:</h1>
     {% for w, c in sortedwords %}
     {{ w }} - {{ c }}
-    <br/>    
+    <br/>
     {% endfor %}
   </body>
 </html>
